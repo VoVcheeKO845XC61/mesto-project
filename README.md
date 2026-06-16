@@ -31,20 +31,11 @@ API
 - `PUT /cards/likes/{cardId}` — добавление лайка
 - `DELETE /cards/likes/{cardId}` — удаление лайка
 
-Браузерная совместимость
-
-Приложение протестировано и работает в следующих браузерах:
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
-
 Этот проект создан в образовательных целях как часть курса Яндекс Практикум.
 
 Автор
 
 Гафинец Владимир 
-
-
+ ссылки: 	 Репозиторий проекта - https://github.com/VoVcheeKO845XC61/mesto-project 
+		 Живой сайт на GitHub Pages - https://VoVcheeKO845XC61.github.io/mesto-project/ 
   
