@@ -18,24 +18,11 @@
 - Адаптивный дизайн: оптимизация интерфейса для различных размеров экранов
 
 
-API
-
-Приложение использует REST API сервера Яндекс Практикума для работы с данными:
-
-- `GET /users/me` — получение информации о текущем пользователе
-- `GET /cards` — получение списка всех карточек
-- `PATCH /users/me` — обновление информации профиля
-- `PATCH /users/me/avatar` — обновление аватара
-- `POST /cards` — создание новой карточки
-- `DELETE /cards/{cardId}` — удаление карточки
-- `PUT /cards/likes/{cardId}` — добавление лайка
-- `DELETE /cards/likes/{cardId}` — удаление лайка
-
 Этот проект создан в образовательных целях как часть курса Яндекс Практикум.
 
 Автор
 
 Гафинец Владимир 
  ссылки: 	 Репозиторий проекта - https://github.com/VoVcheeKO845XC61/mesto-project 
-		 Живой сайт на GitHub Pages - https://VoVcheeKO845XC61.github.io/mesto-project/ 
+		 	 Живой сайт на GitHub Pages - https://VoVcheeKO845XC61.github.io/mesto-project/ 
   

@@ -1,14 +1,17 @@
 {
   "name": "mesto-project",
   "version": "1.0.0",
-  "description": "Проектная работа Mesto",
-  "author": "Гафинец Владимир", 
-  "devDependencies": {
-    "vite": "^8.0.10"
-  },
+  "description": "Проектная работа Mesto - интерактивная страница, где можно добавлять фотографии, удалять их и ставить лайки.",
+  "author": "Гафинец Владимир",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^5.0.0"
   }
 }
