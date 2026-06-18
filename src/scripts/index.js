@@ -7,7 +7,7 @@ import {
   removeCard,
   toggleCardLikeStatus,
 } from "./components/api.js";
-import { createCardElement } from "./components/card.js";
+import { createCardElement, toggleLikeVisual, removeCardElement } from "./components/card.js";
 import { openModal, closeModal, attachModalCloseListeners } from "./components/modal.js";
 import { enableValidation, clearValidation } from "./components/validation.js";
 
@@ -127,8 +127,8 @@ const handleCardInfoClick = (cardId) => {
 const handleLikeButtonClick = (cardId, likeButton, likeCountDisplay, isCurrentlyLiked) => {
   toggleCardLikeStatus(cardId, isCurrentlyLiked)
     .then((updatedCard) => {
-      likeButton.classList.toggle("card__like-button_is-active");
-      likeCountDisplay.textContent = updatedCard.likes.length;
+      // Method from the card module to update the markup
+      toggleLikeVisual(likeButton, likeCountDisplay, updatedCard.likes.length);
     })
     .catch((err) => console.error("Failed to toggle like:", err));
 };
@@ -137,7 +137,8 @@ const handleLikeButtonClick = (cardId, likeButton, likeCountDisplay, isCurrently
 const handleDeleteButtonClick = (cardId, cardElement) => {
   removeCard(cardId)
     .then(() => {
-      cardElement.remove();
+      // Method from the card module to remove an element from the DOM
+      removeCardElement(cardElement);
     })
     .catch((err) => console.error("Failed to delete card:", err));
 };
