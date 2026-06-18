@@ -2,6 +2,17 @@ const getCardTemplate = () => {
   return document.getElementById("card-template").content.querySelector(".card").cloneNode(true);
 };
 
+// Function for visually switching likes and updating the counter
+export const toggleLikeVisual = (likeButton, likeCountDisplay, likesCount) => {
+  likeButton.classList.toggle("card__like-button_is-active");
+  likeCountDisplay.textContent = likesCount;
+};
+
+//  Function for deleting a card element from the DOM
+export const removeCardElement = (cardElement) => {
+  cardElement.remove();
+};
+
 export const createCardElement = (
   cardData,
   { onImageClick, onCardInfoClick, onLikeButtonClick, onDeleteButtonClick },
